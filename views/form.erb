@@ -46,16 +46,18 @@
     </style>
   </head>
   <body>
-    <h1>Hello there!</h1>
+    <div align="center">
+    <h1>Hello and welcome to my Birthday App!</h1>
     <br />
-    <h2>Please enter your details below:</h2>
+    <h2>Please enter your name and your NEXT birthday below:</h2>
 
     <div class="container">
     <form action="/days_til_birthday" method="post">
     <input type="text" size="50" name="name" placeholder="Name">
-    <input type="text" size="50" name="birthday" placeholder="Your NEXT birthday (dd-mm-yyyy)">
+    <input type="text" size="50" name="birthday" placeholder="Your NEXT birthday (dd-mm-yyyy) MUST BE TODAY OR IN THE FUTURE!!!">
     <input type="submit" value="Submit">
     </form>
+    </div>
     </div>
   </body>
 </html>

@@ -1,6 +1,6 @@
 <% require 'date' %>
 <% p @startdate = Date.today %>
-<% p @enddate = Date.parse($birthday) %>
+<% p @enddate = Date.parse(@birthday) %>
 <% p @num = (@startdate ... @enddate).count %>
 <% if @num == 0 %>
 <% redirect '/birthday-greeting'%>
@@ -14,17 +14,19 @@
       }
 
       h1 {
-        color: red;
+        color: #cc3300;
         background-color: gainsboro;
       }
     </style>
   </head>
   <body>
-<br />
-<br />
-<h1>Your birthday will be in <%= @num %> days, <%= $name %> </h1>
-<br />
-<img src="http://www.keepcalmstudio.com/_gallery/1500/100lQ8q.png" width="500" height="650" >
+    <br />
+    <br />
+  <div align="center">
+    <h1>Your birthday will be in <%= @num %> days, <%= @name %> </h1>
+    <br />
+    <img src="http://www.keepcalmstudio.com/_gallery/1500/100lQ8q.png" width="500" height="650" >
+    </div>
 <% end %>
   </body>
 </html>
